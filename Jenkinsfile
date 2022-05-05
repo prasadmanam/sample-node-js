@@ -8,6 +8,7 @@ agent any
     stage ('Build')
     {
       steps {
+      sh 'yum install nodejs'
       sh 'npm install'    
       }
    }
