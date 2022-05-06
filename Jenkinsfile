@@ -17,7 +17,7 @@ agent any
         script {
        withEnv(['JENKINS_NODE_COOKIE=dontkill']) {
           echo 'Hi world'
-        sh 'nohup npm run start:dev'
+        sh 'nohup npm run start:dev&'
       }
         }
       }
