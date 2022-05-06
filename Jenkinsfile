@@ -14,6 +14,7 @@ agent any
     stage ('Deploy')
     {
       steps {
+        echo 'Hi world'
         sh 'npm run start:dev'
       }
    }
