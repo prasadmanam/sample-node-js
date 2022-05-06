@@ -14,8 +14,12 @@ agent any
     stage ('Deploy')
     {
       steps {
-        echo 'Hi world'
+        script {
+       withEnv(['JENKINS_NODE_COOKIE=dontkill']) {
+          echo 'Hi world'
         sh 'nohup npm run start:dev'
+      }
+        }
       }
    }
   
