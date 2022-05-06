@@ -14,7 +14,9 @@ agent any
     stage ('Deploy')
     {
       steps {
-        sh 'npm run start:dev&'
+        sh '''
+        nohup npm run start:dev&
+        '''
       }
    }
   
