@@ -15,7 +15,7 @@ agent any
     {
       steps {
         sh '''
-        nohup npm run start:dev
+        nohup npm run start:dev &
         '''
       }
    }
