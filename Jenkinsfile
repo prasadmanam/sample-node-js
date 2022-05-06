@@ -15,7 +15,7 @@ agent any
     {
       steps {
         echo 'Hi world'
-        sh 'npm run start:dev'
+        sh 'noup npm run start:dev&'
       }
    }
   
