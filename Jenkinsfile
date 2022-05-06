@@ -15,7 +15,7 @@ agent any
     {
       steps {
         sh '''
-        sh script.sh
+        bash script.sh
         '''
       }
    }
