@@ -14,9 +14,7 @@ agent any
     stage ('Deploy')
     {
       steps {
-        sh '''
-        bash script.sh
-        '''
+        sh 'npm run start:dev'
       }
    }
   
