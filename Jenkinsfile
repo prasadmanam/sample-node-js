@@ -8,7 +8,7 @@ agent any
     }
     stage('Stage 2'){
       steps{
-        sh 'echo 'Hi Tarun'
+        sh 'echo Hi Tarun'
       }
     }
   }
