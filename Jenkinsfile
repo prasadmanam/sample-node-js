@@ -1,14 +1,14 @@
 pipeline {
 agent any 
   stages{
-    stage('Build'){
+    stage('Stage 1'){
       steps{
-        sh 'sudo npm install'
+        sh 'echo Hi Hamad'
       }
     }
-    stage('Deploy'){
+    stage('Stage 2'){
       steps{
-        sh 'sudo npm run start:dev'
+        sh 'echo 'Hi Tarun'
       }
     }
   }
