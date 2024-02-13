@@ -8,7 +8,7 @@ agent any
      }
     stage('Build'){
       steps{
-        sh sudo 'npm install'
+        sh 'sudo npm install'
       }
     }
     stage('Deploy'){
