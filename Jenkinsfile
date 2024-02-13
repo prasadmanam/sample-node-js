@@ -14,6 +14,7 @@ agent any
     stage('Deploy'){
       steps{
         sh '''
+        echo hello world
         sudo pm2 stop all
         sudo pm2 start bin/www
         '''
