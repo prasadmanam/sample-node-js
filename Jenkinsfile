@@ -1,14 +1,19 @@
 pipeline {
 agent any 
   stages{
-    stage('Stage 1'){
+    // stage('Install PM2'){
+    //   steps{
+    //     sh 'npm install -g pm2'
+    //   }
+    // }
+    stage('Build'){
       steps{
-        sh 'echo Hi Hamad'
+        sh 'npm install'
       }
     }
-    stage('Stage 2'){
+    stage('Deploy'){
       steps{
-        sh 'echo Hi Tarun'
+        sh 'npm run start:dev'
       }
     }
   }
