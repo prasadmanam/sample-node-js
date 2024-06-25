@@ -3,18 +3,18 @@ pipeline {
   stages{
     stage('First Stage'){
       steps{
-        sh 'echo hello-world'
+        sh 'echo SAVE THE PLANET'
       }
     }
     stage('Second Stage'){
       steps{
-        sh 'echo hello-world2'
+        sh 'echo USE LESS PLASTICS'
       }
     }
 
     stage('Third Stage'){
       steps{
-        sh 'echo hello-world3'
+        sh 'PLANT TREES GO GREEN'
       }
     }
 
