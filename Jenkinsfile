@@ -1,23 +1,9 @@
 pipeline {
-agent any 
+  agent any
   stages{
-   stage('Install PM2'){
-       steps{
-         sh 'sudo npm install -g pm2'
-       }
-     }
-    stage('Build'){
+    stage('First Stage'){
       steps{
-        sh 'sudo npm install'
-      }
-    }
-    stage('Deploy'){
-      steps{
-        sh '''
-        echo hello world
-        sudo pm2 stop all
-        sudo pm2 start bin/www
-        '''
+        sh 'hello world'
       }
     }
   }
