@@ -8,24 +8,21 @@ pipeline {
     }
     stage('Second Stage'){
       steps{
-        sh 'npm install'
+        sh 'npm install pm2-g'
       }
     }
 
-    stage('Third Stage'){
-      steps{
-        sh 'pm2-g'
         stage('Fourth Stage'){
           steps{
-            sh 'Start Node.js'
+            sh 'npm run start:dev'
+          }
+        }
+    
            stage('Fifth Stage'){
           steps{
             sh 'cd /path/bin/www' 
           }
-           }
-          }
-        }
-            
+           }      
       }
     }
 
