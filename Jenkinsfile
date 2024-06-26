@@ -3,18 +3,29 @@ pipeline {
   stages{
     stage('First Stage'){
       steps{
-        sh 'echo Save Planet'
+        sh 'Install Node.js'
       }
     }
     stage('Second Stage'){
       steps{
-        sh 'echo hello-world2'
+        sh 'npm install'
       }
     }
 
     stage('Third Stage'){
       steps{
-        sh 'echo hello-world3'
+        sh 'pm2-g'
+        stage('Fourth Stage'){
+          steps{
+            sh 'Start Node.js'
+           stage('Fifth Stage'){
+          steps{
+            sh 'cd /path/bin/www' 
+          }
+           }
+          }
+        }
+            
       }
     }
 
