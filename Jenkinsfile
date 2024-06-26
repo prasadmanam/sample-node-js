@@ -3,17 +3,17 @@ pipeline {
   stages{
     stage('First Stage'){
       steps{
-        sh 'Install git'
+        sh 'sudo yum install git'
       }
     }
     stage('Second Stage'){
       steps{
-        sh 'Install Node.js'
+        sh 'sudo yum install Node.js'
       }
     }
     stage('Third stage Stage'){
       steps{
-        sh 'npm install pm2-g'
+        sh 'sudo npm install pm2-g'
       }
     }
 
