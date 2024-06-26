@@ -20,7 +20,7 @@ pipeline {
     
            stage('Fifth Stage'){
           steps{
-            sh 'cd /path/bin/www' 
+            sh 'cd/sample-node-js/path/bin/www' 
           }
            }      
       }
