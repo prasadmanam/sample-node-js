@@ -3,7 +3,7 @@ pipeline {
   stages{
     stage('First Stage'){
       steps{
-        sh 'echo hello-world'
+        sh 'echo Save Planet'
       }
     }
     stage('Second Stage'){
