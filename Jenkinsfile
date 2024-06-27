@@ -15,13 +15,13 @@ pipeline {
 
         stage('Fourth Stage'){
           steps{
-            sh 'npm run start:dev'
+            sh 'sudo npm install'
           }
         }
     
            stage('Fifth Stage'){
           steps{
-            sh 'cd/sample-node-js/path/bin/www' 
+            sh 'sudo npm run start:dev' 
           }
            }      
       }
