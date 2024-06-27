@@ -21,7 +21,7 @@ pipeline {
     
            stage('Fifth Stage'){
           steps{
-            sh 'sudo npm run start:dev' 
+            sh 'sudo pm2 start bin/www' 
           }
            }      
       }
