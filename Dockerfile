@@ -1,15 +1,6 @@
-FROM node:9
-
+FROM node:latest
 WORKDIR /app
-
-RUN npm install -g contentful-cli
-
-COPY package.json .
-RUN npm install
-
 COPY . .
-
-USER node
+RUN npm install
 EXPOSE 3000
-
-CMD ["npm", "run", "start:dev"]
+CMD [ "npm","start" ]
