@@ -26,7 +26,7 @@ pipeline {
 
             stage('Sixth stage'){
               steps{
-              sh 'docker build-t tag_jendocimage_.'
+              sh 'docker build-t jendocimage_.'
               }
             }
             
