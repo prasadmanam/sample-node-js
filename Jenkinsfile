@@ -1,39 +1,14 @@
-pipeline {
-  agent any
-  stages{
-    stage('First Stage'){
-      steps{
-        sh 'sudo yum install git -y'
-      }
-    }
+  pipeline {
+    agent any 
     
-    stage('Third stage Stage'){
-      steps{
-        sh 'sudo npm install pm2 -g'
-      }
-    }
-
-        stage('Fourth Stage'){
-          steps{
-            sh 'sudo npm install'
-          }
-        }
-    
-           stage('Fifth Stage'){
-          steps{
-          
-           sh 'sudo pm2 start'
-          }
-           }
-
-            stage('Sixth stage'){
-              steps{
-              sh 'docker build-t jendocimage_.'
-              }
+    stages { 
+        
+      stage1('Build docker image') {
+            steps {  
+                sh 'docker build -t prasad/sample-node-js.'
             }
-            
-          }
-           }      
-      
-
+      }
+            }
+        }
+        
 
