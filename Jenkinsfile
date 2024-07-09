@@ -8,8 +8,7 @@ stages {
             
                 sh 'sudo docker build -t prasad/sample-node-js:$BUILD_NUMBER .'
             }
-
-      
+    
       
             }
   stage('stop conatiner manam'){
