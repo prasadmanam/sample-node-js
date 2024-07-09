@@ -25,7 +25,7 @@ pipeline {
            sh 'sudo pm2 start'
 
             stage ('Build Dockerimage'){
-              sh 'docker build-t tag jendocimage .
+              sh 'docker build-t tag_jendocimage_.
             }
             
           }
