@@ -23,6 +23,8 @@ pipeline {
           steps{
           
            sh 'sudo pm2 start'
+          }
+           }
 
             stage('Sixth stage'){
               steps{
