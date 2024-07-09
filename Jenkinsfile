@@ -6,7 +6,7 @@
                 sh 'docker build -t prasad/sample-node-js.'
             }
       }
-            }
+            
         
         
 
