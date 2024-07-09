@@ -21,8 +21,12 @@ pipeline {
     
            stage('Fifth Stage'){
           steps{
-            sh 'sudo pm2 stop www'
-            sh 'sudo pm2 start bin/www'
+          
+           sh 'sudo pm2 start'
+
+            stage ('Build Dockerimage'){
+              sh 'docker build-t tag jendocimage .
+            }
             
           }
            }      
